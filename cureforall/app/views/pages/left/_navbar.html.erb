@@ -1,16 +1,22 @@
 <aside class="left-sidebar">
-    <!-- Sidebar scroll-->
-    <div class="scroll-sidebar">
-        <!-- Sidebar navigation-->
-        <nav class="sidebar-nav">
-            <ul id="sidebarnav">
-                <li> <a class="waves-effect waves-dark" href="/Accueil/Index" aria-expanded="false"><i class="fa fa-circle-o text-danger"></i><span class="hide-menu">Accueil</span></a></li>
-                <li> <a class="waves-effect waves-dark" href="/Accueil/Categories" aria-expanded="false"><i class="fa fa-circle-o text-success"></i><span class="hide-menu">Catègories</span></a></li>
-                <li> <a class="waves-effect waves-dark" href="/Accueil/Villes" aria-expanded="false"><i class="fa fa-circle-o text-info"></i><span class="hide-menu">Villes</span></a></li>
-                <li> <a class="waves-effect waves-dark" href="/Accueil/Annonces" aria-expanded="false"><i class="fa fa-circle-o text-info"></i><span class="hide-menu">Annonces</span></a></li>
-            </ul>
-        </nav>
-        <!-- End Sidebar navigation -->
-    </div>
-    <!-- End Sidebar scroll-->
+  <!-- Sidebar scroll-->
+  <div class="scroll-sidebar">
+    <!-- Sidebar navigation-->
+    <nav class="sidebar-nav">
+      <ul id="sidebarnav">
+        <li><%= link_to pages_home_path,  :class => "waves-effect waves-dark", aria:{expanded: "false" } do %>
+          <i class="fa fa-circle-o text-danger"></i><span class="hide-menu">Accueil</span>
+          <% end %>
+        </li>
+
+        <li><%= link_to pages_login_path,  :class => "waves-effect waves-dark", aria:{expanded: "false" } do %>
+          <i class="fa fa-circle-o text-succed"></i><span class="hide-menu">Log in</span>
+          <% end %>
+        </li>
+        <li> <a class="waves-effect waves-dark" href="/Accueil/Annonces" aria-expanded="false"><i class="fa fa-circle-o text-info"></i><span class="hide-menu">Annonces</span></a></li>
+      </ul>
+    </nav>
+    <!-- End Sidebar navigation -->
+  </div>
+  <!-- End Sidebar scroll-->
 </aside>

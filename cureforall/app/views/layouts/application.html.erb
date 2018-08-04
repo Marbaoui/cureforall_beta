@@ -3,61 +3,18 @@
 <head>
   <title>Cureforall</title>
   <%= csrf_meta_tags %>
-
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+  <!-- <%= stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track': 'reload' %> -->
   <%= stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= stylesheet_link_tag    'style.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 </head>
 
 
-<body class="skin-blue fixed-layout">
-  <!-- ============================================================== -->
-  <!-- Preloader - style you can find in spinners.css -->
-  <!-- ============================================================== -->
-  <!-- <div class="preloader">
-    <div class="loader">
-      <div class="loader__figure"></div>
-      <p class="loader__label">admin</p>
-    </div>
-  </div> -->
-  <!-- ============================================================== -->
-  <!-- Main wrapper - style you can find in pages.scss -->
-  <!-- ============================================================== -->
-  <%= render partial: "mainwrapper" %>
-  <!-- ============================================================== -->
-  <!-- End Wrapper -->
-  <!-- ============================================================== -->
-  <!-- ============================================================== -->
-  <!-- All Jquery -->
-  <!-- ============================================================== -->
-  <!-- <script src="./Content/assets/node_modules/jquery/jquery-3.2.1.min.js"></script> -->
-  <!-- Bootstrap tether Core JavaScript -->
-  <!-- <script src="./Content/assets/node_modules/popper/popper.min.js"></script> -->
-  <%= javascript_include_tag (javascript_path("popper.min.js"))  %>
-  <!-- <script src="./Content/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
-  <!-- slimscrollbar scrollbar JavaScript -->
-  <!-- <script src="./Content/theme/dist/js/perfect-scrollbar.jquery.min.js"></script> -->
-  <!--Wave Effects -->
-  <!-- <script src="./Content/theme/dist/js/waves.js"></script> -->
-  <%= javascript_include_tag (javascript_path("waves.js"))  %>
-
-  <!--Menu sidebar -->
-  <!-- <script src="./Content/theme/dist/js/sidebarmenu.js"></script> -->
-  <%= javascript_include_tag (javascript_path("sidebarmenu.js"))  %>
-  <!--stickey kit -->
-  <!-- <script src="./Content/assets/node_modules/sticky-kit-master/dist/sticky-kit.min.js"></script> -->
-  <%= javascript_include_tag (javascript_path("sticky-kit.min.js"))  %>
-  <!-- <script src="./Content/assets/node_modules/sparkline/jquery.sparkline.min.js"></script> -->
-  <!--Custom JavaScript -->
-  <!-- <script src="./Content/theme/dist/js/custom.min.js"></script> -->
-  <%= javascript_include_tag (javascript_path("custom.min.js"))  %>
 
   <%= yield %>
-
-
-</body>
 
 </html>
